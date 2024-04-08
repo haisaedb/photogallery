@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --teal: #007d7b;
+    --black: #000000;
+    --white: #fff;
+    --lt-gray: rgb(128, 128, 128);
+
+    --body-fonts: Arial,Helvetica,sans-serif;
+}
+
+
+html{
+    background-color: var(--black);
+}
+
+body{
+    background-color: var(--white);
+    width: 1300px;
+    margin: 0 auto;
+    font-family: var(--body-fonts);
+}
+
+header, main, footer{
+    width: 100%;
+}
+
+h1{
+    font-size: 3em;
+    padding-top: 2rem;
+    margin-top: -1rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    
+}
+h1 > a{
+    text-decoration: none;
+    color: var(--teal);
+
+}
+
+h1 > a:hover{
+    color: var(--black);
+    background-color: var(--teal);
+
+}
+
+header > nav {
+    background-color: var(--black);
+    
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: right;
+    font-weight: bold;
+}
+
+nav a{
+    color: var(--white);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+      
+}
+
+nav > a{
+    margin-left: 76rem;
+    font-weight: bold;
+    position: fixed;
+    border: 1px solid var(--black);
+    border-radius: 6px 10px 10px 10px;
+    background-color: var(--black);
+    padding: 0.2rem;
+    bottom: 0rem;
+    color: var(--teal);
+    margin-bottom: 1.2rem;
+}
+
+nav a:hover{
+    border-radius: 6px 5px 10px 10px;
+    padding: 0.2rem;
+    color: var(--black);
+    background-color: var(--teal);   
+}
+
+
+section > h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+section > p{
+    padding: 1rem;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    
+}
+figure img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0.5rem;
+}
+
+
+figcaption{
+    text-transform: uppercase;
+}
+
+
+ figure:nth-child(2) figcaption,
+ figure:nth-child(4) figcaption,
+ figure:nth-child(5) figcaption,
+ figure:nth-child(8) figcaption,
+ figure:nth-child(9) figcaption,
+ figure:nth-child(10) figcaption,
+ figure:nth-child(11) figcaption,
+ figure:nth-child(12) figcaption{
+    position: relative;
+    top: -250px;
+    font-weight: 700;
+
+
+}
+
+figure:nth-child(5) figcaption,
+figure:nth-child(4) figcaption{
+    position: relative;
+    top: -600px; 
+}
+
+figure:nth-child(1) figcaption,
+figure:nth-child(3) figcaption,
+figure:nth-child(6) figcaption,
+figure:nth-child(7) figcaption{
+    position: relative;
+    top: -30px;  
+    font-weight: 700;
+
+}
+
+figure:nth-child(1) figcaption,
+figure:nth-child(2) figcaption,
+figure:nth-child(3) figcaption,
+figure:nth-child(7) figcaption,
+figure:nth-child(12) figcaption{
+    color:var(--white);
+}
+
+#contact{
+    background-color: var(--black);
+}
+
+#contact h2{
+    color: var(--white);
+    padding-top: 0.5rem;
+}
+
+#contact p{
+    text-align: center;
+    color: var(--white);
+}
+
+form{
+    width:1000px;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+input, label{
+    display: block;
+    width: 100%
+
+}
+
+input{
+    border: 1px solid var(--black);
+    padding: 1rem;
+    
+}
+
+label{
+    color:var(--white);
+    text-transform: uppercase;
+    padding-bottom: -1rem ;
+    margin-top: 0.5rem;
+}
+
+::placeholder{
+    color: var(--teal);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#submit{
+    border-radius: 30px;
+    background-color: var(--teal);
+    width: 650px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: -1rem;
+    margin-bottom: -3rem;
+    
+}
+
+footer{
+   text-align: center;
+   padding: 2rem;
+   margin-top: 2rem;
+   background-color: var(--black);
+   color: var(--white);
+}
+
+@media screen and (max-width: 880px) {
+
+    
+
+    body{
+        width:auto;
+    }
+
+    h1{
+        padding-left: 2rem;
+
+    }
+
+    p{
+        width:auto;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallery-container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        
+    }
+
+    figure img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+
+    }
+    
+}
+
+
+
+
+
+
+
+
