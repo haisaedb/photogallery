@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
+<header id="top-header">
 <h1><a href="#home"> TK Photography</a></h1>
 <nav>
 <ul>
@@ -21,90 +21,96 @@
 
 <main>
     <section id="about">
-        <header>
+        <header class="section-headers">
             <h2>About</h2> 
-            <p>Hello!<br>I'm TK and I'm a photographer. 
+            <p><span>Hello!</span><br>I'm TK and I'm a photographer. 
             I love looking at life through the lens of my camera. 
             Landscape photography is my specialty and its taken me all over the world.</p>
         </header>
     </section>
 
     <section id="gallery">
-        <h2>Gallery</h2>
+        <header class="section-headers">
+            <h2>Gallery</h2>
             <p>Here are some highlights of my work. 
             The locations and year are in the caption.</p>
+        </header>
                 <div class="gallery-container">
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Chile.png" alt="Image of a beach in Chile.">
+                    <img src="images-20240408T003356Z-001/images/Chile.png" alt="Image of a beach in Chile." width="420" height="282">
                     <figcaption>Chile, 2001</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Guatemala.png" alt="Image of a beautiful sunset with mountains, body of water, and purple flowers in Guatemala.">
+                    <img src="images-20240408T003356Z-001/images/Guatemala.png" alt="Image of a beautiful sunset with mountains, body of water, and purple flowers in Guatemala." width="420" height="282">
                     <figcaption>Guatemala, 1997</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Hawaii.png" alt="Image of a beautiful beach with high greeny mountains in Hawaii.">
+                    <img src="images-20240408T003356Z-001/images/Hawaii.png" alt="Image of a beautiful beach with high greeny mountains in Hawaii." width="421" height="281">
                     <figcaption>Hawaii, 2010</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Iran.png" alt="Image of mountainous, grassy, and sandy landscape in Iran.">
+                    <img src="images-20240408T003356Z-001/images/Iran.png" alt="Image of mountainous, grassy, and sandy landscape in Iran." width="420" height="630">
                     <figcaption>Iran, 1999</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Ireland.png" alt="Image of mountainous or hilly and rich greenery landscape in Ireland.">
+                    <img src="images-20240408T003356Z-001/images/Ireland.png" alt="Image of mountainous or hilly and rich greenery landscape in Ireland." width="420" height="630">
                     <figcaption>Ireland, 2012</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Italy.png" alt="Image of large mountain, everest trees, and beautiful body of water in Italy.">
+                    <img src="images-20240408T003356Z-001/images/Italy.png" alt="Image of large mountain, everest trees, and beautiful body of water in Italy." width="420" height="630">
                     <figcaption>Italy, 2015</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Moab-Desert.png" alt="Image of a canyon-like desert in Moab, Utah.">
+                    <img src="images-20240408T003356Z-001/images/Moab-Desert.png" alt="Image of a canyon-like desert in Moab, Utah." width="420" height="281">
                     <figcaption>Moab Desert, 2020</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Rocky-Mountains.png" alt="Image of the Rocky Mountains in the US near the sea splashing up against the rocks.">
+                    <img src="images-20240408T003356Z-001/images/Rocky-Mountains.png" alt="Image of the Rocky Mountains in the US near the sea splashing up against the rocks." width="420" height="281">
                     <figcaption>Rocky Mountains, 2009</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Switzerland.png" alt="Image of mountainous area with everest-like trees in Switzerland.">
+                    <img src="images-20240408T003356Z-001/images/Switzerland.png" alt="Image of mountainous area with everest-like trees in Switzerland." width="420" height="280">
                     <figcaption>Switzerland, 2014</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/UK.png" alt="Image of patchy hilly mountainous area in UK.">
+                    <img src="images-20240408T003356Z-001/images/UK.png" alt="Image of patchy hilly mountainous area in UK." width="420" height="281">
                     <figcaption>UK, 2005</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/USA.png" alt="Image of beautiful meadow in USA.">
+                    <img src="images-20240408T003356Z-001/images/USA.png" alt="Image of beautiful meadow in USA." width="420" height="280">
                     <figcaption>USA, 2021</figcaption>
                 </figure>
                 <figure>
-                    <img src="images-20240408T003356Z-001/images/Wyoming.png" alt="Image of lake and beautiful forest area in Wyoming.">
+                    <img src="images-20240408T003356Z-001/images/Wyoming.png" alt="Image of lake and beautiful forest area in Wyoming." width="420" height="280">
                     <figcaption>Wyoming, 2021</figcaption>
                 </figure>
                 </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <header class="section-headers">
+            <h2>Contact</h2>
             <p>Please fill out this form and I'll connect with you soon.</p> 
+        </header>
                 <div id="form">
                     <h3>Your contact information</h3>
-                        <form action="#" method="POST">
+                        <form action="form.html" method="POST" target="blank">
                             <label for="my-name">Name</label>
                             <input type="text" name="my-name" id="my-name" placeholder="Your full name">
                             <label for="my-email">Email</label>
                             <input type="text" name="my-email" id="my-email" placeholder="Enter your email address">
                             <label for="my-message">Message</label>
                             <input type="text" name="my-message" id="my-message" placeholder="What can I help you with?">Message</input>
-                            <input type="button" name="submit" id="submit" value="Submit">
+                            <input type="submit" name="submit-button" id="submit-button" value="Submit">
                         </form>
                 </div>
     </section>
 </main>
 
 <footer>
-<p><small>Copyright 2021 TK Photography</small></p>
+    <p>
+        <small>Copyright 2021 TK Photography</small>
+    </p>
 </footer>
 </body>
 </html>

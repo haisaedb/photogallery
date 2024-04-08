@@ -50,7 +50,7 @@ h1 > a:hover{
 
 }
 
-header > nav {
+#top-header > nav {
     background-color: var(--black);
     
 }
@@ -94,13 +94,18 @@ nav a:hover{
 }
 
 
-section > h2{
+.section-headers > h2{
     text-align: center;
     font-size: 2em;
+    padding-top: 0.5rem;
 }
 
-section > p{
+.section-headers > p{
     padding: 1rem;
+}
+
+#about span{
+    display: block;
 }
 
 .gallery-container{
@@ -175,6 +180,11 @@ figure:nth-child(12) figcaption{
     color: var(--white);
 }
 
+div h3{
+    color: var(--white);
+    visibility: hidden;
+}
+
 form{
     width:1000px;
     align-items: center;
@@ -193,6 +203,11 @@ input{
     
 }
 
+input:invalid{
+    border: 2px solid red;
+
+}
+
 label{
     color:var(--white);
     text-transform: uppercase;
@@ -206,7 +221,7 @@ label{
     font-weight: bold;
 }
 
-#submit{
+#submit-button{
     border-radius: 30px;
     background-color: var(--teal);
     width: 650px;
@@ -219,6 +234,16 @@ label{
     
 }
 
+#submit-button:focus{
+    outline: 3px solid var(--white);
+
+}
+
+#submit-button:hover{
+    outline: 3px dotted var(--white);
+
+}
+
 footer{
    text-align: center;
    padding: 2rem;
@@ -227,10 +252,19 @@ footer{
    color: var(--white);
 }
 
+@media screen and (min-width: 1300px) {
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+   
+}
+
 @media screen and (max-width: 880px) {
 
     
-
     body{
         width:auto;
     }
@@ -249,6 +283,11 @@ footer{
         justify-content: center;
     }
 
+    nav > a{
+        margin-left: 45rem;
+        margin-bottom: 1.2rem;
+    }
+
     .gallery-container{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
@@ -262,8 +301,58 @@ footer{
         display: block;
 
     }
+    form{
+        width:500px;
+    
+    }
+    #submit{
+        width: 450px;  
+    }
     
 }
+
+
+@media  screen and (max-width: 485px ){
+    
+    
+    body{
+        width:auto;
+    }
+
+    h1{
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav > a{
+        margin-left: 23rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .gallery-container{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        
+    }
+    form{
+        width:350px;
+    
+    }
+    #submit{
+        width: 250px;  
+    }
+}
+
+
+
 
 
 
