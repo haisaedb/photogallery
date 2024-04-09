@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+   
 }
 
 :root{
@@ -211,7 +211,7 @@ input:invalid{
 label{
     color:var(--white);
     text-transform: uppercase;
-    padding-bottom: -1rem ;
+    padding-bottom: 0.5rem ;
     margin-top: 0.5rem;
 }
 
@@ -229,14 +229,9 @@ label{
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 auto;
-    padding-bottom: -1rem;
+    margin-top: 1rem;
     margin-bottom: -3rem;
     
-}
-
-#submit-button:focus{
-    outline: 3px solid var(--white);
-
 }
 
 #submit-button:hover{
@@ -305,8 +300,9 @@ footer{
         width:500px;
     
     }
-    #submit{
-        width: 450px;  
+    #submit-button{
+        width: 400px;  
+        
     }
     
 }
@@ -346,7 +342,7 @@ footer{
         width:350px;
     
     }
-    #submit{
+    #submit-button{
         width: 250px;  
     }
 }
